@@ -32,6 +32,11 @@ A backtracking algoritmus egy mélységi keresést alkalmaz, amely minden lehets
 6. Minden királynő elhelyezve? (Minden oszlop megnézve)
     - Igen: Megoldás megtalálva, kiírás és kilépés
     - Nem: Visszalépés az előző oszlophoz
+  
+### Solver ábra rajza
+
+![backtrack8queens](https://github.com/kallaiviktor/14biot/assets/44492387/dd39daeb-a816-4e7f-8419-c36fa8e79b7a)
+
 
 ## HillClimbingSolver osztály
 
