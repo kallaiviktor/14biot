@@ -53,6 +53,11 @@ A hegymászó algoritmus egy olyan megközelítést alkalmaz, amely az aktuális
 5. Lépés végrehajtása
 6. Visszatérés a 2. lépéshez
 
+### Solver ábra rajza
+
+![hillclimb8queens](https://github.com/kallaiviktor/14biot/assets/44492387/0eea986e-da6c-470a-9712-f20b545b5611)
+
+
 ## Megoldások gyorsasága
 
 A backtracking algoritmus minden lehetséges állapotot végigpróbál, ezért akkor működik hatékonyan, ha a korai szakaszban talál megoldást. A hegymászó algoritmus gyorsabban talál megoldást, ha az állapottér kezdeti részei közel állnak a megoldáshoz. A gyorsaság mindkét algoritmusnál függ a kezdőállapottól és az alkalmazott heurisztikától. Az optimalizációk különbsége miatt az algoritmusok eredményei eltérhetnek.
