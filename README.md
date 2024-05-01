@@ -13,3 +13,22 @@ A State osztály az összes lehetséges állapotot tartalmazza, amelyekben a pro
 ## Operator osztály
 
 Az operator osztály felelős az állapotok manipulálásáért. Az egyik operátor a királynő elhelyezését végzi el egy adott sorban és oszlopban a sakktáblán. A másik operátor a királynő eltávolítását végzi az adott pozícióból.
+
+## BacktrackingSolver osztály
+
+A backtracking algoritmus egy mélységi keresést alkalmaz, amely minden lehetséges lépést végigjár, majd visszalép, ha egy adott lépés nem vezet megoldáshoz. A backtracking algoritmus lényege az, hogy próbálkozik minden lehetséges lépéssel, és ha egy lépés nem megfelelő, visszalép a korábbi állapotba és más útvonalat próbál.
+
+### A Solver mondatszerű leírása
+
+1. Kezdeti sakktábla generálása
+2. Ellenőrzés: Megoldható-e az állapot?
+    - Igen: Folytatás a 3. lépésnél
+    - Nem: Megoldás nem lehetséges, kilépés
+3. Következő üres oszlop kiválasztása
+4. Az összes lehetséges sor kiértékelése az oszlopon
+5. Ellenőrzés: Megfelelő-e az állapot?
+    - Igen: Királynő elhelyezése, folytatás a 2. lépésnél
+    - Nem: Visszalépés az előző oszlophoz
+6. Minden királynő elhelyezve? (Minden oszlop megnézve)
+    - Igen: Megoldás megtalálva, kiírás és kilépés
+    - Nem: Visszalépés az előző oszlophoz
