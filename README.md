@@ -32,3 +32,19 @@ A backtracking algoritmus egy mélységi keresést alkalmaz, amely minden lehets
 6. Minden királynő elhelyezve? (Minden oszlop megnézve)
     - Igen: Megoldás megtalálva, kiírás és kilépés
     - Nem: Visszalépés az előző oszlophoz
+
+## HillClimbingSolver osztály
+
+A hegymászó algoritmus egy olyan megközelítést alkalmaz, amely az aktuális legjobb lépést választja ki a jelenlegi állapotból. Az algoritmus megpróbálja minimalizálni az ütközéseket (azaz a konfliktusokat), amelyek akkor következnek be, ha egy királynő támadja a másikat. Az algoritmus minden lépésben a legjobb lépést választja ki, és ezzel halad előre a megoldás felé.
+
+### A Solver mondatszerű leírása
+
+1. Kezdeti sakktábla generálása
+2. Ellenőrzés: Megfelelő-e az állapot? (Nincs ütközés)
+    - Igen: Megoldás megtalálva, kilépés
+    - Nem: Folytatás a következő lépésre
+3. Összes lehetséges lépés kiértékelése
+4. Legjobb lépés kiválasztása (minimális ütközéssel)
+5. Lépés végrehajtása
+6. Visszatérés a 2. lépéshez
+
